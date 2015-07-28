@@ -62,7 +62,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFl-8q-Xzd">
-                                        <rect key="frame" x="1" y="73" width="283.5" height="35"/>
+                                        <rect key="frame" x="1" y="73" width="283" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="PJm-zW-i1Q"/>
@@ -71,7 +71,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-FQ-mcv">
-                                        <rect key="frame" x="284" y="73" width="283.5" height="35"/>
+                                        <rect key="frame" x="285" y="73" width="282.5" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="oYx-CQ-gq9"/>
@@ -160,7 +160,7 @@
                                     <constraint firstItem="gH7-yn-9yj" firstAttribute="top" secondItem="EEc-s1-75W" secondAttribute="bottom" constant="1" id="eLS-da-zat"/>
                                     <constraint firstItem="2HL-Ee-iW3" firstAttribute="top" secondItem="S8G-Tq-GW5" secondAttribute="bottom" constant="1" id="gpo-fi-MXm"/>
                                     <constraint firstItem="PRT-82-NSg" firstAttribute="top" secondItem="1hK-jM-V3K" secondAttribute="bottom" constant="1" id="j8L-Cn-8P0"/>
-                                    <constraint firstItem="YW0-FQ-mcv" firstAttribute="leading" secondItem="WFl-8q-Xzd" secondAttribute="trailing" id="kPK-VN-Wzk"/>
+                                    <constraint firstItem="YW0-FQ-mcv" firstAttribute="leading" secondItem="WFl-8q-Xzd" secondAttribute="trailing" constant="1" id="kPK-VN-Wzk"/>
                                     <constraint firstItem="1hK-jM-V3K" firstAttribute="top" secondItem="7cl-uE-7Gz" secondAttribute="bottom" constant="1" id="npp-2e-fjp"/>
                                     <constraint firstItem="YW0-FQ-mcv" firstAttribute="leading" secondItem="WFl-8q-Xzd" secondAttribute="trailing" id="osF-jh-UJK"/>
                                     <constraint firstItem="WFl-8q-Xzd" firstAttribute="top" secondItem="2HL-Ee-iW3" secondAttribute="bottom" constant="1" id="qLA-fY-jlS"/>
@@ -170,6 +170,11 @@
                                     <constraint firstAttribute="trailing" secondItem="EEc-s1-75W" secondAttribute="trailing" constant="1" id="xEh-10-GzV"/>
                                     <constraint firstItem="7cl-uE-7Gz" firstAttribute="top" secondItem="EEc-s1-75W" secondAttribute="bottom" constant="1" id="zLN-FR-I1L"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="osF-jh-UJK"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -196,6 +201,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="form_view" destination="Ivc-dd-Btv" id="8hZ-ks-jeC"/>
                         <outlet property="txt_address_1" destination="uDD-aD-ks3" id="dDW-S9-JLJ"/>
                         <outlet property="txt_address_2" destination="EEc-s1-75W" id="fAP-Cc-vWr"/>
                         <outlet property="txt_city" destination="gH7-yn-9yj" id="nKW-zp-HSJ"/>

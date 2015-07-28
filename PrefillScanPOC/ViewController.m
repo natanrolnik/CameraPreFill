@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CameraViewController.h"
 #import "ImageDataExtractor.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController () <CameraDelegate, ImageDataExtractorDelegate>
 
@@ -24,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *txt_date_of_birth;
 @property (weak, nonatomic) IBOutlet UITextField *txt_phone;
 
+@property (weak, nonatomic) IBOutlet UIView *form_view;
+
 @end
 
 @implementation ViewController
@@ -34,6 +37,28 @@
     
     self.imageDataExtractor = [[ImageDataExtractor alloc] init];
     self.imageDataExtractor.delegate = self;
+    
+    self.form_view.layer.borderColor = self.form_view.backgroundColor.CGColor;
+    self.form_view.layer.borderWidth = 1.0;
+    self.form_view.layer.cornerRadius = 8.0;
+    
+    [self addPaddingToTextField:self.txt_email];
+    [self addPaddingToTextField:self.txt_title];
+    [self addPaddingToTextField:self.txt_first_name];
+    [self addPaddingToTextField:self.txt_last_name];
+    [self addPaddingToTextField:self.txt_address_1];
+    [self addPaddingToTextField:self.txt_address_2];
+    [self addPaddingToTextField:self.txt_city];
+    [self addPaddingToTextField:self.txt_zip];
+    [self addPaddingToTextField:self.txt_date_of_birth];
+    [self addPaddingToTextField:self.txt_phone];
+}
+
+- (void)addPaddingToTextField:(UITextField *)textField
+{
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
+    textField.leftView = v;
+    textField.leftViewMode = UITextFieldViewModeAlways;
 }
 
 - (void)didReceiveMemoryWarning
