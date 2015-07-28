@@ -7,7 +7,7 @@
 //
 
 #import "CameraViewController.h"
-#import <IPDFCameraViewController/IPDFCameraViewController.h>
+#import "IPDFCameraViewController.h"
 
 @interface CameraViewController ()
 
