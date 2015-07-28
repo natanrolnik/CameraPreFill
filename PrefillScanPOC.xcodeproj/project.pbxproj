@@ -14,7 +14,6 @@
 		4C68B41E1B6774D000450E50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68B41D1B6774D000450E50 /* ViewController.m */; };
 		4C68B4211B6774D000450E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C68B41F1B6774D000450E50 /* Main.storyboard */; };
 		4C68B4231B6774D000450E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C68B4221B6774D000450E50 /* Assets.xcassets */; };
-		4C68B4261B6774D000450E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C68B4241B6774D000450E50 /* LaunchScreen.storyboard */; };
 		4C68B42F1B67790C00450E50 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68B42E1B67790C00450E50 /* CameraViewController.m */; };
 		4C68B4321B67812D00450E50 /* ImageDataExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C68B4311B67812D00450E50 /* ImageDataExtractor.m */; };
 		4C68B4341B67840B00450E50 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 4C68B4331B67840B00450E50 /* tessdata */; };
@@ -33,7 +32,6 @@
 		4C68B41D1B6774D000450E50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4C68B4201B6774D000450E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C68B4221B6774D000450E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4C68B4251B6774D000450E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C68B4271B6774D000450E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C68B42D1B67790C00450E50 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		4C68B42E1B67790C00450E50 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				4C68B4361B6794E400450E50 /* G8Tesseract+Hackathon.m */,
 				4C68B41F1B6774D000450E50 /* Main.storyboard */,
 				4C68B4221B6774D000450E50 /* Assets.xcassets */,
-				4C68B4241B6774D000450E50 /* LaunchScreen.storyboard */,
 				4C68B4271B6774D000450E50 /* Info.plist */,
 				4C68B4161B6774D000450E50 /* Supporting Files */,
 			);
@@ -186,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C68B4261B6774D000450E50 /* LaunchScreen.storyboard in Resources */,
 				4C68B4341B67840B00450E50 /* tessdata in Resources */,
 				4C68B4231B6774D000450E50 /* Assets.xcassets in Resources */,
 				4C68B4211B6774D000450E50 /* Main.storyboard in Resources */,
@@ -252,14 +248,6 @@
 				4C68B4201B6774D000450E50 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4C68B4241B6774D000450E50 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C68B4251B6774D000450E50 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,6 +341,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PrefillScanPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.PrefillScanPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +356,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PrefillScanPOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.PrefillScanPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

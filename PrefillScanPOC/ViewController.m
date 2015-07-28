@@ -13,6 +13,16 @@
 @interface ViewController () <CameraDelegate, ImageDataExtractorDelegate>
 
 @property (nonatomic, strong) ImageDataExtractor *imageDataExtractor;
+@property (weak, nonatomic) IBOutlet UITextField *txt_email;
+@property (weak, nonatomic) IBOutlet UITextField *txt_title;
+@property (weak, nonatomic) IBOutlet UITextField *txt_first_name;
+@property (weak, nonatomic) IBOutlet UITextField *txt_last_name;
+@property (weak, nonatomic) IBOutlet UITextField *txt_address_1;
+@property (weak, nonatomic) IBOutlet UITextField *txt_address_2;
+@property (weak, nonatomic) IBOutlet UITextField *txt_city;
+@property (weak, nonatomic) IBOutlet UITextField *txt_zip;
+@property (weak, nonatomic) IBOutlet UITextField *txt_date_of_birth;
+@property (weak, nonatomic) IBOutlet UITextField *txt_phone;
 
 @end
 
